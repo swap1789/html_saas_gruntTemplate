@@ -50,11 +50,16 @@ module.exports = function(grunt){
 			html: {
 				files: ['index.html'],
 				tasks: ['htmlhint']
+			},
+
+			css: {
+				files: ['sass/*.scss'],
+				tasks: ['sass']
 			}
 		}
 
 
-    })  
+    });  
 
    	grunt.registerTask('default', ['watch']);
    	grunt.registerTask('compile', ['htmlhint','uglify','sass']);

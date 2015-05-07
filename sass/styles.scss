@@ -1,9 +1,11 @@
+$primary-color: #f28800;
+
 .mainContent {
 	background: green;
 	height: 500px;
 	width: 500px;
 	border-radius: 5px;
 		p {
-			color: blue
+			color: $primary-color;
 		}
 }
